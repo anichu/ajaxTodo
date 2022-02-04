@@ -1,0 +1,75 @@
+html {
+	margin: 0;
+	padding: 0;
+}
+.btn-table {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.modal-container {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	z-index: 2;
+	background: rgba(0, 0, 0, 0.3);
+	display: none;
+	transition: display 2s ease-in-out;
+}
+.modal-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-height: 80vh;
+	z-index: 5;
+	flex-direction: column;
+	background: rebeccapurple;
+	width: 50%;
+	min-width: 45%;
+	margin: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 10px;
+	border-radius: 10px;
+}
+.modal-header {
+	font-size: 30px;
+	color: white;
+	text-transform: uppercase;
+	line-height: 35px;
+}
+.modal-body {
+	padding: 10px 0px;
+	width: 50%;
+	text-align: center;
+}
+span {
+	width: 100%;
+	text-align: right;
+	font-size: 20px;
+	margin-top: -5px;
+	cursor: pointer;
+	color: red;
+	padding: 5px;
+}
+.close-btn {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.close-btn i {
+	font-size: 20px;
+	color: red;
+	margin: 5px;
+}
+input {
+	width: 100%;
+	padding: 3px 10px;
+	border-radius: 10px;
+	outline: none;
+	font-size: inherit;
+}
